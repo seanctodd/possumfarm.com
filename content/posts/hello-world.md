@@ -1,7 +1,6 @@
 +++
 title = 'Hello World'
 date = 2024-08-06T18:11:18-04:00
-draft = true
 +++
 
 # Welcome to the Possum Farm!
