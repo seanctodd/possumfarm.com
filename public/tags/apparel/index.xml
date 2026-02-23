@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Apparel on Possum Farm</title>
-    <link>https://possumfarm.com/tags/apparel/</link>
+    <link>http://localhost:1315/tags/apparel/</link>
     <description>Recent content in Apparel on Possum Farm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://possumfarm.com/tags/apparel/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1315/tags/apparel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Play Dead Hoodie</title>
-      <link>https://possumfarm.com/store/play-dead-hoodie/</link>
+      <link>http://localhost:1315/store/play-dead-hoodie/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://possumfarm.com/store/play-dead-hoodie/</guid>
+      <guid>http://localhost:1315/store/play-dead-hoodie/</guid>
       <description>We&amp;rsquo;ve all been there. The party is too loud. The group chat is too active. Your extended family has opinions about your life choices. You need a way out.&#xA;The Play Dead Hoodie is that way out.&#xA;Pull this hoodie on, pull the drawstring, and disappear like a possum who has correctly assessed the situation and chosen the sensible option. The soft fleece lining creates an interior environment that is, frankly, better than whatever is happening outside.</description>
     </item>
     <item>
       <title>Possum Farm Classic Tee</title>
-      <link>https://possumfarm.com/store/possum-farm-tee/</link>
+      <link>http://localhost:1315/store/possum-farm-tee/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://possumfarm.com/store/possum-farm-tee/</guid>
+      <guid>http://localhost:1315/store/possum-farm-tee/</guid>
       <description>The Original Possum Farm Classic Tee — the garment that will define your personality for years to come. Whether you&amp;rsquo;re at the farmers market, a formal dinner, or standing in a field at 3am for reasons you&amp;rsquo;d rather not explain, this shirt says everything words cannot.&#xA;Front: &amp;ldquo;POSSUM FARM&amp;rdquo; in glorious arc lettering above a vintage-style illustration of a possum that looks simultaneously regal and deeply suspicious.&#xA;Back: &amp;ldquo;EST. 2003 — PLAY DEAD, LIVE FREE&amp;rdquo; in smaller text that rewards people who look too closely.</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Facts on Possum Farm</title>
-    <link>https://possumfarm.com/tags/facts/</link>
+    <link>http://localhost:1315/tags/facts/</link>
     <description>Recent content in Facts on Possum Farm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 08 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://possumfarm.com/tags/facts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1315/tags/facts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>17 Possum Facts That Will Change Your Entire Life</title>
-      <link>https://possumfarm.com/posts/possum-facts-you-need-to-know/</link>
+      <link>http://localhost:1315/posts/possum-facts-you-need-to-know/</link>
       <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://possumfarm.com/posts/possum-facts-you-need-to-know/</guid>
+      <guid>http://localhost:1315/posts/possum-facts-you-need-to-know/</guid>
       <description>Every day, people walk around not knowing enough about possums. This is a crime against knowledge. I, Papi Possum, am here to fix this.&#xA;Here are 17 possum facts that I personally guarantee will change your life, your perspective, and possibly your career trajectory.&#xA;1. Possums are the only marsupials native to North America.&#xA;That means while Australia is out there bragging about kangaroos and koalas, America has been sitting on this incredible marsupial the entire time and nobody told anybody.</description>
     </item>
   </channel>

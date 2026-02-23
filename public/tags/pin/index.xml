@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pin on Possum Farm</title>
-    <link>https://possumfarm.com/tags/pin/</link>
+    <link>http://localhost:1315/tags/pin/</link>
     <description>Recent content in Pin on Possum Farm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://possumfarm.com/tags/pin/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1315/tags/pin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Possum Farm Enamel Pin Set</title>
-      <link>https://possumfarm.com/store/possum-enamel-pin/</link>
+      <link>http://localhost:1315/store/possum-enamel-pin/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://possumfarm.com/store/possum-enamel-pin/</guid>
+      <guid>http://localhost:1315/store/possum-enamel-pin/</guid>
       <description>Small objects. Big possum energy.&#xA;The Possum Farm Enamel Pin Set features six hard enamel pins, each depicting a possum in a different life situation. Collect them all. Trade with friends. Lose one in a couch cushion and find it six months later and feel a surge of joy.&#xA;The Collection 🦝 &amp;ldquo;Playing Dead&amp;rdquo; — A possum lying peacefully on its back, one tiny paw raised. Gold metal backing. The most popular pin by a significant margin.</description>
     </item>
   </channel>
