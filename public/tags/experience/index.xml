@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Experience on Possum Farm</title>
-    <link>http://localhost:1313/tags/experience/</link>
+    <link>https://possumfarm.com/tags/experience/</link>
     <description>Recent content in Experience on Possum Farm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/experience/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://possumfarm.com/tags/experience/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adopt-A-Possum Certificate</title>
-      <link>http://localhost:1313/store/possum-adoption-certificate/</link>
+      <link>https://possumfarm.com/store/possum-adoption-certificate/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/store/possum-adoption-certificate/</guid>
+      <guid>https://possumfarm.com/store/possum-adoption-certificate/</guid>
       <description>Have you ever wanted a possum of your own but lack the 40 acres, the emotional fortitude, and the specific lifestyle that possum ownership requires?&#xA;We have the solution.&#xA;Adopt-A-Possum is Possum Farm&amp;rsquo;s symbolic adoption program. For a one-time fee, you receive:&#xA;What You Get Immediate delivery:&#xA;A beautiful, officially certified Possum Farm Adoption Certificate with your name and your possum&amp;rsquo;s name in fancy lettering Your possum&amp;rsquo;s official biography (a full-page portrait of their personality, habits, and opinions) A 5x7 photograph of your possum doing possum things Ongoing (digital, monthly):</description>
     </item>
   </channel>

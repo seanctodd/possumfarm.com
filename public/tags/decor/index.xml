@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Decor on Possum Farm</title>
-    <link>http://localhost:1313/tags/decor/</link>
+    <link>https://possumfarm.com/tags/decor/</link>
     <description>Recent content in Decor on Possum Farm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/decor/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://possumfarm.com/tags/decor/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Official Possum Facts Poster</title>
-      <link>http://localhost:1313/store/possum-facts-poster/</link>
+      <link>https://possumfarm.com/store/possum-facts-poster/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/store/possum-facts-poster/</guid>
+      <guid>https://possumfarm.com/store/possum-facts-poster/</guid>
       <description>You know possum facts. Now make sure everyone who enters your home, office, or dentist waiting room also knows possum facts.&#xA;The Official Possum Farm Possum Facts Poster is a 12-panel educational masterpiece designed by Papi Possum and formatted by his neighbor who has a computer.&#xA;Featuring:&#xA;Top 12 possum facts, curated personally by Papi Vintage scientific illustration style drawings of possums doing possum things A map of possum territory (it&amp;rsquo;s most of North America, they&amp;rsquo;ve been busy) A portrait of Bernadette in the corner because she is an icon Papi&amp;rsquo;s signature, signed by Papi Printed on heavy matte paper using archival inks that will outlast most furniture and probably several political administrations.</description>
     </item>
   </channel>

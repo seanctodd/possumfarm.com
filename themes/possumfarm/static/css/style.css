@@ -662,14 +662,15 @@ h1, h2, h3 {
   margin: 50px 0;
   position: relative;
 }
-.papi-quote::before {
-  content: '🦝';
-  font-size: 3rem;
+.papi-quote-img {
+  width: 80px;
+  height: 80px;
   position: absolute;
-  top: -24px;
+  top: -40px;
   left: 50%;
   transform: translateX(-50%);
   filter: drop-shadow(0 0 10px var(--possum-purple));
+  animation: float 3s ease-in-out infinite;
 }
 .papi-quote p {
   font-family: 'Pacifico', cursive;
@@ -704,8 +705,9 @@ h1, h2, h3 {
 .site-footer a {
   color: var(--possum-purple);
 }
-.site-footer .footer-logo {
-  font-size: 2rem;
+.site-footer .footer-logo-img {
+  width: 80px;
+  height: 80px;
   margin-bottom: 16px;
   display: block;
   animation: spin-slow 8s linear infinite;
@@ -782,9 +784,11 @@ h1, h2, h3 {
   position: sticky;
   top: 100px;
 }
-.about-portrait-emoji {
-  font-size: 8rem;
+.about-portrait-img {
+  width: 160px;
+  height: 160px;
   display: block;
+  margin: 0 auto;
   animation: float 3s ease-in-out infinite;
   filter: drop-shadow(0 0 20px var(--possum-purple));
 }
