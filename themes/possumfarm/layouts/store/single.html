@@ -1,0 +1,73 @@
+{{ define "main" }}
+
+<div class="breadcrumb">
+  <a href="{{ "/" | relURL }}">Home</a>
+  <span> › </span><a href="{{ "/store/" | relURL }}">Store</a>
+  <span> › </span><span style="color:var(--possum-teal)">{{ .Title }}</span>
+</div>
+
+<div class="product-detail">
+  <div class="product-detail-image">
+    {{ .Params.emoji | default "🦝" }}
+  </div>
+  <div class="product-detail-info">
+    <h1 class="page-title" style="margin-bottom:10px">{{ .Title }}</h1>
+    <p style="font-family:'Press Start 2P',monospace;font-size:10px;color:var(--possum-purple);margin-bottom:16px;letter-spacing:1px">
+      SKU: POSSUM-{{ .Title | upper | replaceRE "[^A-Z0-9]" "-" }}
+    </p>
+    <span class="product-price product-detail-info">${{ .Params.price }}</span>
+
+    {{ with .Params.variants }}
+    <div style="margin-bottom:24px">
+      <p style="font-family:'Press Start 2P',monospace;font-size:10px;color:var(--text-muted);letter-spacing:1px;margin-bottom:10px">OPTIONS:</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        {{ range . }}
+        <span class="tag" style="cursor:pointer;padding:8px 16px">{{ . }}</span>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+    <div class="post-content" style="margin-bottom:30px">
+      {{ .Content }}
+    </div>
+
+    <div style="margin-bottom:20px">
+      <p style="font-family:'Press Start 2P',monospace;font-size:9px;color:var(--possum-green);letter-spacing:1px">
+        ✓ BLESSED BY PAPI POSSUM HIMSELF<br>
+        ✓ SHIPS FROM THE ACTUAL FARM<br>
+        ✓ SMELLS LIKE POSSUM (ALLEGEDLY)<br>
+        ✓ ARRIVES IN RECYCLED BOXES
+      </p>
+    </div>
+
+    <button class="buy-btn-large" onclick="alert('Oh wow you actually clicked it! Unfortunately our payment processor is a raccoon named Derek and he\'s currently unavailable. Email papi@possumfarm.com to order. Derek will get back to you eventually.')">
+      🛒 ADD TO CART
+    </button>
+
+    <p style="font-family:'Press Start 2P',monospace;font-size:8px;color:var(--text-muted);margin-top:12px;letter-spacing:1px">
+      30-day possum guarantee or your money back*<br>
+      <span style="font-size:7px">*Papi defines "money back" loosely</span>
+    </p>
+  </div>
+</div>
+
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,var(--possum-purple),transparent);margin:60px 0">
+
+<h2 class="section-title rainbow">You Might Also Like</h2>
+<div class="grid-4">
+  {{ range first 4 (where (where .Site.RegularPages "Section" "store") "Permalink" "ne" .Permalink) }}
+  <div class="product-card">
+    <div class="bevel-card">
+      <a href="{{ .Permalink }}">
+        <span class="product-emoji">{{ .Params.emoji | default "🦝" }}</span>
+        <p class="product-name">{{ .Title }}</p>
+        <p class="product-price">${{ .Params.price }}</p>
+        <span class="buy-btn">VIEW ITEM</span>
+      </a>
+    </div>
+  </div>
+  {{ end }}
+</div>
+
+{{ end }}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <title>{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.tagline }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+
+  <!-- Canonical -->
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  <!-- RSS -->
+  {{ range .AlternativeOutputFormats }}
+  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ $.Site.Title }}">
+  {{ end }}
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Permanent+Marker&family=Press+Start+2P&family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+
+  <!-- Favicon emoji -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦝</text></svg>">
+</head>
+<body>
+
+  <!-- MARQUEE BANNER — the most important element on this page -->
+  <div class="marquee-banner">
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+      ✦ WELCOME TO POSSUM FARM ✦ HOME OF THE WORLD'S FINEST FREE-RANGE POSSUMS ✦ PAPI POSSUM APPROVES THIS MESSAGE ✦ POSSUMS ARE JUST SPICY CATS ✦ ORGANIC • ETHICAL • UNHINGED ✦ EST. 2003 ✦ PLAYING DEAD SINCE FOREVER ✦ BUY MERCH OR THE POSSUMS WILL JUDGE YOU ✦ THEY'RE ALREADY JUDGING YOU ✦
+    </marquee>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a href="{{ "/" | relURL }}">
+      <img src="{{ "images/possum.svg" | relURL }}" alt="Possum Farm Logo" class="site-logo">
+    </a>
+    <span class="wordart-title sparkles">{{ .Site.Title }}</span>
+    <p class="site-tagline">{{ .Site.Params.tagline }}</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}"{{ if eq .Name "🛒 MERCH STORE" }} class="store-link"{{ end }}>{{ .Name }}</a>
+      {{ end }}
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="site-main">
+    {{- block "main" . }}{{- end }}
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <span class="footer-logo">🦝</span>
+    <p>© {{ now.Year }} {{ .Site.Title }} — All Rights Reserved (Possums Not Included)</p>
+    <p>Hand-farmed with ❤️ by <strong>{{ .Site.Params.farmer }}</strong></p>
+    <p>
+      <a href="{{ "/" | relURL }}">Home</a> ·
+      <a href="{{ "/about/" | relURL }}">About Papi</a> ·
+      <a href="{{ "/posts/" | relURL }}">Blog</a> ·
+      <a href="{{ "/store/" | relURL }}">Store</a>
+    </p>
+    <p>📧 {{ .Site.Params.email }}</p>
+    <br>
+    <div class="visitor-counter">0 0 4 2 0 6 9</div>
+    <p style="margin-top:8px;font-size:8px;">← YOU ARE VISITOR NUMBER THAT MANY (probably)</p>
+    <br>
+    <p style="color: rgba(255,255,255,0.2); font-size: 8px;">Best viewed in Internet Explorer 6.0 at 800×600 resolution</p>
+  </footer>
+
+</body>
+</html>

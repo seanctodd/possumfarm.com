@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+<div class="breadcrumb">
+  <a href="{{ "/" | relURL }}">Home</a>
+  <span> › </span><span style="color:var(--possum-teal)">{{ .Title }}</span>
+</div>
+
+<div class="about-grid">
+  <aside class="about-portrait">
+    <span class="about-portrait-emoji">🦝</span>
+    <p class="about-portrait-name">Papi Possum</p>
+    <p class="about-portrait-title">
+      FOUNDER & FARMER<br>
+      ————<br>
+      MARSUPIAL WHISPERER<br>
+      ————<br>
+      AMATEUR PHILOSOPHER<br>
+      ————<br>
+      PROFESSIONAL VIBES<br>
+      ————<br>
+      EST. 2003
+    </p>
+    <div style="margin-top:20px">
+      <div class="visitor-counter" style="font-size:11px">A+</div>
+      <p style="font-family:'Press Start 2P',monospace;font-size:8px;color:var(--text-muted);margin-top:6px">POSSUM RATING</p>
+    </div>
+  </aside>
+
+  <div class="post-content bevel-card">
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ .Content }}
+  </div>
+</div>
+
+<div class="papi-quote">
+  <p>"I didn't choose the possum life. The possum life chose me. At 2am. Behind an Applebee's."</p>
+  <cite>— Papi Possum</cite>
+</div>
+
+{{ end }}

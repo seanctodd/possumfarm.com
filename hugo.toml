@@ -1,4 +1,32 @@
 baseURL = 'https://possumfarm.com/'
 languageCode = 'en-us'
-title = 'My New Possum Farm'
-theme = 'ananke' 
+title = 'Possum Farm'
+theme = 'possumfarm'
+
+[params]
+  tagline = "Where The Opossums Roam Free & The Vibes Are Immaculate"
+  farmer = "Papi Possum"
+  email = "papi@possumfarm.com"
+  description = "The world's premier organic free-range possum farm. Est. 2003. Blessed by the great marsupial gods."
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About Papi"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "The Blog"
+    url = "/posts/"
+    weight = 3
+  [[menu.main]]
+    name = "🛒 MERCH STORE"
+    url = "/store/"
+    weight = 4
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"

@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+<div class="list-header">
+  <h1 class="section-title rainbow">{{ .Title }}</h1>
+  {{ with .Description }}<p style="color:var(--text-muted);font-family:'Pacifico',cursive;font-size:1.1rem;">{{ . }}</p>{{ end }}
+</div>
+
+<div class="grid-3">
+  {{ range .Pages }}
+  <a href="{{ .Permalink }}" class="post-card">
+    <div class="bevel-card">
+      <p class="post-meta">{{ .Date.Format "Jan 02, 2006" }}</p>
+      <h2 class="post-title">{{ .Title }}</h2>
+      <p class="post-excerpt">{{ .Summary | truncate 130 }}</p>
+      {{ with .Params.tags }}
+      <div class="tags">
+        {{ range first 3 . }}
+        <span class="tag">{{ . }}</span>
+        {{ end }}
+      </div>
+      {{ end }}
+      <span class="read-more">READ MORE »</span>
+    </div>
+  </a>
+  {{ else }}
+  <div class="bevel-card">
+    <p class="post-title" style="color:var(--possum-pink)">Nothing here yet!</p>
+    <p class="post-excerpt">Papi is working on it. Probably. He might be napping.</p>
+  </div>
+  {{ end }}
+</div>
+
+{{ end }}

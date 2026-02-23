@@ -1,0 +1,92 @@
+{{ define "main" }}
+
+<!-- HERO -->
+<section class="hero">
+  <p style="font-family:'Press Start 2P',monospace;font-size:11px;color:var(--possum-green);letter-spacing:2px;margin-bottom:20px;" class="glow-green">★ EST. 2003 ★ CERTIFIED ORGANIC ★ DEEPLY UNHINGED ★</p>
+  <p class="hero-text">
+    Welcome to <strong style="color:var(--possum-yellow)">Possum Farm</strong> — where the grass is long,
+    the nights are wild, and every possum is living its absolute best life.
+    Founded by the legendary <em style="color:var(--possum-pink)">Papi Possum</em>, we are the world's only certified
+    organic, free-range, spiritually-awakened possum operation.
+  </p>
+  <div>
+    <a href="{{ "/store/" | relURL }}" class="hero-cta">🛒 SHOP THE MERCH</a>
+    &nbsp;&nbsp;
+    <a href="{{ "/about/" | relURL }}" class="hero-cta" style="background:linear-gradient(135deg,var(--possum-teal),var(--possum-green));color:#000;">🦝 MEET PAPI</a>
+  </div>
+</section>
+
+<!-- PAPI WISDOM -->
+<div class="papi-quote">
+  <p>"If a possum plays dead and nobody is around to see it, did it really play dead? Yes. Yes it did. They do it all the time. It's a whole thing."</p>
+  <cite>— Papi Possum, Philosopher & Farmer</cite>
+</div>
+
+<!-- FEATURED POSTS -->
+<section class="mb-60">
+  <h2 class="section-title rainbow">📰 From The Farm Blog</h2>
+  <div class="grid-3">
+    {{ range first 3 (where .Site.RegularPages "Section" "posts") }}
+    <a href="{{ .Permalink }}" class="post-card">
+      <div class="bevel-card">
+        <p class="post-meta">{{ .Date.Format "Jan 02, 2006" }}</p>
+        <h3 class="post-title">{{ .Title }}</h3>
+        <p class="post-excerpt">{{ .Summary | truncate 120 }}</p>
+        <span class="read-more">READ MORE »</span>
+      </div>
+    </a>
+    {{ else }}
+    <div class="bevel-card">
+      <p class="post-title" style="color:var(--possum-pink)">No posts yet!</p>
+      <p class="post-excerpt">Papi is busy wrangling possums. Content incoming.</p>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+<!-- FEATURED MERCH -->
+<section class="mb-60">
+  <h2 class="section-title rainbow">🛒 Hot Merch Drops</h2>
+  <div class="grid-4">
+    {{ range first 4 (where .Site.RegularPages "Section" "store") }}
+    <div class="product-card">
+      <div class="bevel-card">
+        <a href="{{ .Permalink }}">
+          <span class="product-emoji">{{ .Params.emoji | default "🦝" }}</span>
+          <p class="product-name">{{ .Title }}</p>
+          <p class="product-price">${{ .Params.price }}</p>
+          <p class="product-desc">{{ .Summary | truncate 80 }}</p>
+          <span class="buy-btn">BUY NOW</span>
+        </a>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  <div class="text-center">
+    <a href="{{ "/store/" | relURL }}" class="hero-cta">VIEW ALL MERCH</a>
+  </div>
+</section>
+
+<!-- WHY POSSUM FARM -->
+<section class="mb-60">
+  <h2 class="section-title rainbow">✦ Why Possum Farm?</h2>
+  <div class="grid-3">
+    <div class="bevel-card text-center">
+      <p style="font-size:3.5rem;margin-bottom:16px">🌿</p>
+      <h3 style="color:var(--possum-green);font-family:'Permanent Marker',cursive;font-size:1.4rem;margin-bottom:12px">100% Organic</h3>
+      <p style="color:var(--text-muted)">Our possums eat only the finest dumpster-adjacent organic matter. No GMOs. No pesticides. Just vibes and fallen fruit.</p>
+    </div>
+    <div class="bevel-card text-center">
+      <p style="font-size:3.5rem;margin-bottom:16px">🐾</p>
+      <h3 style="color:var(--possum-teal);font-family:'Permanent Marker',cursive;font-size:1.4rem;margin-bottom:12px">Free Range</h3>
+      <p style="color:var(--text-muted)">Our possums roam freely across 40 acres of lush nocturnal paradise. They sleep 18 hours a day and we respect that.</p>
+    </div>
+    <div class="bevel-card text-center">
+      <p style="font-size:3.5rem;margin-bottom:16px">💫</p>
+      <h3 style="color:var(--possum-pink);font-family:'Permanent Marker',cursive;font-size:1.4rem;margin-bottom:12px">Spiritually Blessed</h3>
+      <p style="color:var(--text-muted)">Every possum is blessed by Papi Possum himself using an ancient technique he learned from a YouTube video at 3am.</p>
+    </div>
+  </div>
+</section>
+
+{{ end }}

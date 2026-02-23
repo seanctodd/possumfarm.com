@@ -1,0 +1,12 @@
+name = "Possum Farm"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "A 2000s WordArt-inspired theme for the world's finest possum farm"
+homepage = "https://possumfarm.com"
+tags = ["possum", "blog", "store", "retro", "chaotic"]
+features = ["WordArt", "Glitter", "Vibes", "Marsupials"]
+min_version = "0.100.0"
+
+[author]
+  name = "Papi Possum"
+  email = "papi@possumfarm.com"

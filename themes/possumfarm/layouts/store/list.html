@@ -1,0 +1,41 @@
+{{ define "main" }}
+
+<div class="list-header">
+  <h1 class="section-title rainbow">🛒 Possum Farm Merch Store</h1>
+  <p style="color:var(--text-muted);font-family:'Pacifico',cursive;font-size:1.1rem;max-width:600px;margin:0 auto 20px">
+    Support the farm. Rep the possum. Look absolutely unhinged at the grocery store.
+    All proceeds go directly to possum enrichment activities (mostly snacks).
+  </p>
+  <p style="font-family:'Press Start 2P',monospace;font-size:10px;color:var(--possum-green)" class="glow-green">
+    🔥 FREE SHIPPING ON ORDERS OVER $69 🔥
+  </p>
+</div>
+
+<div class="grid-4">
+  {{ range .Pages }}
+  <div class="product-card">
+    <div class="bevel-card">
+      <a href="{{ .Permalink }}">
+        <span class="product-emoji">{{ .Params.emoji | default "🦝" }}</span>
+        <p class="product-name">{{ .Title }}</p>
+        <p class="product-price">${{ .Params.price }}</p>
+        <p class="product-desc">{{ .Summary | truncate 100 }}</p>
+        <span class="buy-btn">BUY NOW</span>
+      </a>
+    </div>
+  </div>
+  {{ else }}
+  <div class="bevel-card" style="grid-column:1/-1;text-align:center">
+    <p style="font-size:5rem">🦝</p>
+    <p class="post-title" style="color:var(--possum-pink)">Store is loading...</p>
+    <p class="post-excerpt">Papi is hand-labeling everything. He only has two paws.</p>
+  </div>
+  {{ end }}
+</div>
+
+<div class="papi-quote">
+  <p>"Every item in this store was personally blessed by me, Papi Possum, and also by my cousin Gerald who showed up one day and never left."</p>
+  <cite>— Papi Possum, Founder & Chief Possum Officer</cite>
+</div>
+
+{{ end }}
